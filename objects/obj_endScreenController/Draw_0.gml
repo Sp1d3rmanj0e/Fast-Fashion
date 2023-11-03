@@ -9,5 +9,3 @@ if (angle != target_angle) {
 } else {
 	draw_text(x, y+25, string(totalScore));
 }
-
-draw_sprite(0, 0, 0, spr_endScreenText);

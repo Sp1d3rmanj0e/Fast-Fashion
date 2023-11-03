@@ -46,7 +46,7 @@ function create_decoration(_x, _y, _sprite) {
 question_sprites_and_locations =
 [
 [[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_badChoice1]],
+[[10, 100, spr_mailbox],[1297, 702, spr_badChoice2]],
 [[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
 [[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
 [[10, 100, spr_mailbox],[100, 10, spr_mailbox]],

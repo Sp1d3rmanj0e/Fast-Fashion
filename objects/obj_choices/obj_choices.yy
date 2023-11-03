@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_choices",
   "spriteId": {
-    "name": "spr_badChoice1",
-    "path": "sprites/spr_badChoice1/spr_badChoice1.yy",
+    "name": "spr_badChoice2",
+    "path": "sprites/spr_badChoice2/spr_badChoice2.yy",
   },
   "solid": false,
   "visible": true,

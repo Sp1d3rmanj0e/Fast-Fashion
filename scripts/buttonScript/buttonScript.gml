@@ -42,6 +42,7 @@ function buttonScript(_num){
 				add_decoration(true);
 			}
 			audio_play_sound(snd_cheer, 1, 0);
+			audio_play_sound(snd_correctJingle, 1, 0);
 		
 		break;
 		case BSCRIPT.INCORRECT: 
@@ -53,6 +54,7 @@ function buttonScript(_num){
 				add_decoration(false);
 			}
 			audio_play_sound(snd_boo, 1, 0);
+			audio_play_sound(snd_wrongJingle, 1, 0);
 		break;
 	}
 }
