@@ -6,9 +6,10 @@ incorrect = 0;
 net = 0;
 
 // Sounds
-audio_factory = audio_play_sound(snd_factory, 1, 1, net/-10);
-audio_play_sound(snd_water, 1, 1, 1);
-audio_birds = audio_play_sound(snd_birds, 1, 1, net/10);
+audio_factory = audio_play_sound(snd_factory, 1, 1, 1);
+audio_water = audio_play_sound(snd_water, 1, 1, 1);
+audio_birds = audio_play_sound(snd_birds, 1, 1, 1);
+audio_industry = audio_play_sound(snd_industry, 1, 1, 1);
 
 function add_correct() {
 	correct++;
@@ -27,7 +28,11 @@ function update_volumes() {
 	// Sounds
 	audio_sound_gain(audio_factory, net/-10, 100);
 	audio_sound_gain(audio_birds, net/10, 100);
+	audio_sound_gain(audio_water, 1 + min(0, net/10), 100);
+	audio_sound_gain(audio_industry, max(0, net/-10), 100)
 }
+
+update_volumes();
 
 function create_decoration(_x, _y, _sprite) {
 	with(instance_create_layer(_x, _y, "Structures", obj_choices)) {

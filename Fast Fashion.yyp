@@ -24,6 +24,7 @@
     {"id":{"name":"obj_mailbox","path":"objects/obj_mailbox/obj_mailbox.yy",},"order":3,},
     {"id":{"name":"snd_birds","path":"sounds/snd_birds/snd_birds.yy",},"order":0,},
     {"id":{"name":"snd_cheer","path":"sounds/snd_cheer/snd_cheer.yy",},"order":0,},
+    {"id":{"name":"snd_industry","path":"sounds/snd_industry/snd_industry.yy",},"order":3,},
     {"id":{"name":"obj_letter","path":"objects/obj_letter/obj_letter.yy",},"order":1,},
     {"id":{"name":"buttonScript","path":"scripts/buttonScript/buttonScript.yy",},"order":0,},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":1,},
