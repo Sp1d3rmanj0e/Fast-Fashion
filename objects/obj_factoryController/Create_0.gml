@@ -51,7 +51,7 @@ question_sprites_and_locations =
 [[50, 0, spr_carrotFarm],[32, 217, spr_garbage]],
 [[744, 251, spr_moneyPile],[0, 0, spr_sadMan]],
 [[844, 269, spr_picnic],[747, 137, spr_drowningInDrip]],
-[[0, 0, spr_localStore],[0, 0, spr_boxMan]]
+[[0, 0, spr_localStore],[224, 512, spr_boxMan]]
 ];
 
 function add_decoration(_isGood) {
