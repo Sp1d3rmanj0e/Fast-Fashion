@@ -7,7 +7,7 @@ target_angle = 180 -51.42 * totalScore;
 
 instance_create_layer(room_width, 10, "Instances", obj_hyperlink,
 {
-	icon_sprite: spr_logoPlaceholder,
+	icon_sprite: spr_ourLogo,
 	url: "-1",
 	text: "Links to More information!"
 });

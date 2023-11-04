@@ -1,0 +1,1 @@
+audio_sound_gain(global.mainSongID, 0.4, 100);
