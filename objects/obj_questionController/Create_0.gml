@@ -20,7 +20,7 @@ function next_question() {
 		answers = get_answers(question);
 		create_buttons(answers);
 	} else {
-		instance_create_layer(room_width/2, room_height-200, "Instances", obj_endScreenController);
+		instance_create_layer(320, 480, "Instances", obj_endScreenController);
 	}
 }
 
@@ -46,7 +46,7 @@ function get_answers(_questionNum) {
 		case 2: return ["100 trillion liters!!!!","As little as possible"];
 		case 3: return ["Use Nylon and Polyester","Use Organic Cotton and Wool"];
 		case 4: return ["Every single season","Only when you need to"];
-		case 5: return ["Spend Every cent you have!!!!!","Only spend what you need"];
+		case 5: return ["Spend Every cent you have!","Only spend what you need"];
 		case 6: return ["It makes you happy!","It makes you sad"];
 		case 7: return ["Buy Clothes Online","Buy From Local Stores"];
 	}
