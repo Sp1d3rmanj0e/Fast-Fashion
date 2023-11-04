@@ -10,4 +10,5 @@ y = lerp(y,ystart - hover*8,0.1);
 // click
 if (_click) and (button_script >= 0) {
 	script_execute(buttonScript,button_script);
+	audio_play_sound(snd_click, 1, 0);
 }

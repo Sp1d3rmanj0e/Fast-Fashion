@@ -45,17 +45,14 @@ function create_decoration(_x, _y, _sprite) {
 // [[x, y, sprite],[x, y, sprite]]
 question_sprites_and_locations =
 [
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[1297, 702, spr_badChoice2]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]],
-[[10, 100, spr_mailbox],[100, 10, spr_mailbox]]
-]
+[[416, 256, spr_happyWorkers],[239, 271, spr_unhappyWorkers]],
+[[0, 0, spr_fish],[782, -27, spr_sludgePipes]],
+[[324, 174, spr_sheep],[-453, -51, spr_smokePipes]],
+[[0, 0, spr_carrotFarm],[32, 217, spr_garbage]],
+[[744, 251, spr_moneyPile],[0, 0, spr_sadMan]],
+[[844, 269, spr_picnic],[747, 137, spr_drowningInDrip]],
+[[0, 0, spr_localStore],[0, 0, spr_boxMan]]
+];
 
 function add_decoration(_isGood) {
 	

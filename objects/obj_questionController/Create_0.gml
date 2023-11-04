@@ -7,13 +7,13 @@ question = 0; // 0 is the introduction letter
 
 question_shown = false;
 
-qbox_width = 580;
-qbox_height= 40;
+qbox_width = 1000;
+qbox_height= 80;
 
 function next_question() {
 	question++;
 	
-	if (question <= 10) {
+	if (question <= 7) {
 		text = get_question(question);
 		question_shown = true;
 	
@@ -27,33 +27,28 @@ function next_question() {
 function get_question(_questionNum) {
 	
 	switch(_questionNum) {
-		case 1: return "1"
-		case 2: return "2"
-		case 3: return "3"
-		case 4: return "4"
-		case 5: return "5"
-		case 6: return "6"
-		case 7: return "7"
-		case 8: return "8"
-		case 9: return "9"
-		case 10: return "10"
+		case 1: return "How much should we pay our workers?"
+		case 2: return "Water Waste - How much water should we be using?"
+		case 3: return "What materials should we use to produce our clothing?"
+		case 4: return "How often do you need to get new clothes?"
+		case 5: return "How much money should you spend on clothing each year?"
+		case 6: return "How does Fast Fashion affect You?"
+		case 7: return "Where should I be buying my clothing?"
 	}
 	return "error"
 }
 
+// [Bad, Good]
 function get_answers(_questionNum) {
 	
 	switch(_questionNum) {
-		case 1: return ["1bad","1good"];
-		case 2: return ["2bad","2good"];
-		case 3: return ["3bad","3good"];
-		case 4: return ["4bad","4good"];
-		case 5: return ["5bad","5good"];
-		case 6: return ["6bad","6good"];
-		case 7: return ["7bad","7good"];
-		case 8: return ["8bad","8good"];
-		case 9: return ["9bad","9good"];
-		case 10: return ["10bad","10good"];
+		case 1: return ["$1.50/hour","$15/hour"];
+		case 2: return ["100 trillion liters!!!!","As little as possible"];
+		case 3: return ["Use Nylon and Polyester","Use Organic Cotton and Wool"];
+		case 4: return ["Every single season","Only when you need to"];
+		case 5: return ["Spend Every cent you have!!!!!","Only spend what you need"];
+		case 6: return ["It makes you happy!","It makes you sad"];
+		case 7: return ["Buy Clothes Online","Buy From Local Stores"];
 	}
 	return ["there is an","error"]
 }
@@ -65,13 +60,13 @@ function create_buttons(_answers) {
 	randomize();
 	var _side = choose(-1, 1);
 	
-	_id1 = instance_create_layer(x - 150 * _side, y + 50, "Instances", obj_button,
+	_id1 = instance_create_layer(x - 210 * _side, y + 90, "Instances", obj_button,
 	{
 		text : _answers[0],
 		button_script: BSCRIPT.INCORRECT
 	});
 	
-	_id2 = instance_create_layer(x + 150 * _side, y + 50, "Instances", obj_button,
+	_id2 = instance_create_layer(x + 210 * _side, y + 90, "Instances", obj_button,
 	{
 		text : _answers[1],
 		button_script: BSCRIPT.CORRECT

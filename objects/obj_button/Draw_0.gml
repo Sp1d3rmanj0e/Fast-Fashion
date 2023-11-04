@@ -1,11 +1,11 @@
 /// @description
 
 // set color
-draw_set_color(merge_color(make_color_rgb(35, 116, 148),make_color_rgb(20, 201, 247),hover));
+draw_set_color(merge_color(c_white,c_ltgray,hover));
 
 // draw rounded rectangle
 draw_roundrect(x-width/2,y,x+width/2,y+height,0);
-draw_set_color(merge_color(c_blue,c_aqua,hover));
+draw_set_color(merge_color(c_black,c_black,hover));
 draw_roundrect(x-width/2,y,x+width/2,y+height,1);
 
 // draw text

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_mailbox",
   "spriteId": {
-    "name": "spr_mailbox",
-    "path": "sprites/spr_mailbox/spr_mailbox.yy",
+    "name": "spr_mailboxClosed",
+    "path": "sprites/spr_mailboxClosed/spr_mailboxClosed.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,6 +26,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

@@ -70,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "choice effects",
-    "path": "folders/Sprites/choice effects.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
 }
